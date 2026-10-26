@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ALWAYS VISIBLE => Intro -->
+    <section id="home">
+        <div>
+            <h1>Kathleen Zhu</h1>
+
+            <!-- ALWAYS VISIBLE => Wrap the text around the photo -->
+            <div class="intro-row">
+
+                <div class="intro-text">
+                    <p>
+                        hi there! i'm an undergraduate at uc berkeley majoring in
+                        electrical engineering and computer sciences (eecs).
+                    </p>
+
+                    <p>
+                        i'm interested using tech to build products in areas that i think are important, such as sustainability & healthcare. i also love teaching and making women in tech feel comfortable and confident in themselves!
+                    </p>
+
+                    <p>
+                        in my free time, you'll usually find me:
+                    </p>
+
+                    <ul>
+                        <li>spending time with people i love</li>
+                        <li>taking photos in nature</li>
+                        <li>gymming</li>
+                        <li>writing or painting</li>
+                        <li>trying new food and exploring berkeley</li>
+                    </ul>
+                </div>
+            
+                <div class="intro-photo">
+                    <img src="profile.jpeg" alt="Photo of me">
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kathleen-zhu-berkeley/" target="_blank">
+                            <img class="linkedin-icon" src="linkedin.png" alt="LinkedIn">
+                        </a>
+
+                        <a href="Resumé (Kathleen Zhu).pdf" target="_blank">
+                            <img src="resume.png" alt="Resume">
+                        </a>
+
+                        <a href="https://github.com/endless-world" target="_blank">
+                            <img src="github.png" alt="GitHub">
+                        </a>
+
+                        <a href="https://www.instagram.com/kathleen_zhu8/" target="_blank">
+                            <img src="instagram.png" alt="Instagram">
+                        </a>
+
+                        <a href="https://www.goodreads.com/user/show/201540714" target="_blank">
+                            <img src="goodreads.png" alt="Goodreads">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ALWAYS VISIBLE => NAVIGATION -->
+    <nav>
+        <button onclick="showSection('experience')">experience</button>
+        <span>|</span>
+
+        <button onclick="showSection('blog')">blog</button>
+        <span>|</span>
+
+        <button onclick="showSection('art')">art</button>
+        <span>|</span>
+
+        <button onclick="showSection('contact')">contact</button>
+    </nav>
+
+    <!-- ONLY THIS PART CHANGES -->
+    <div id="content-area">
+
+        <section id="experience" class="tab-content">
+            <h2>industry</h2>
+            <ul class="exp-list">
+                <li>
+                    Software Engineer (Contractor), UCSF Dept. of Surgery (Lin Lab) @ SF, CA
+                    <span class="date">(aug 2026 - present)</span>
+                </li>
+            </ul>
+            <h2>leadership & teaching</h2>
+            <ul class="exp-list">
+                <li>
+                    Co-founder, COO, SennAI @ SF, CA
+                    <span class="date">(march 2026 - present)</span>
+                </li>
+                <li>
+                    Teaching Intern, CS61B: Data Structures and Algorithms @ UC Berkeley EECS
+                    <span class="date">(aug 2026 - present)</span>
+                </li>
+                <li>
+                    Digital Marketing Director, Program Media Lead
+                    CS Kickstart @ UC Berkeley
+                    <span class="date">(aug 2025 - present)</span>
+                </li>
+            </ul>
+            <h3>projects</h3>
+            <ul class="exp-list">
+                <li>
+                    AI-powered Restaurant & Recipe Recommendation Platform @ UC Berkeley
+                    <span class="date">(aug 2026 - present)</span>
+                </li>
+                <li>
+                    Personal Portfolio Website (this, for fun!)
+                    <span class="date">(oct 2026 - present)</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="blog" class="tab-content">
+            <h2>works</h2>
+            <p>blog content is currently being put together!</p>
+        </section>
+
+        <section id="art" class="tab-content">
+            <h2>pieces</h2>
+            <p>art pieces are currently being put together!</p>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>contact</h2>
+            <p>
+                email:
+                <a href="mailto:yourname@example.com">kathleenzhu@berkeley.edu</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- (i will use javascript to hide bottom sections!) -->
+    <script src="script.js"></script>
+
+</body>
+</html>

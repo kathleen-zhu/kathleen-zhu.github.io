@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #FAF7F2;
+    color: black;
+}
+
+.tab-content {
+    display: none;
+}
+
+nav {
+    display: flex;
+    /* lays out the navigation buttons in one row */
+    justify-content: flex-start;
+    gap: 40px;
+    /* top right bottom left */
+    padding: 0 0 0 265px;
+    box-sizing: border-box;
+}
+
+/* normal nav buttons */
+nav button {
+    background-color: #f9f4d6;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 6px;
+}
+
+/* clicked / selected button (light blue highlight) */
+nav button.active {
+    background-color: #e6f2ff;
+}
+
+nav button:hover {
+    text-decoration: underline;
+}
+
+/* controlling your above and below spacing */
+section {
+    padding: 30px 18%;
+}
+
+#home {
+    min-height: auto;
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+/* experience subheading */
+#blog h2,
+#art h2,
+#contact h2,
+#experience h2,
+#experience h3 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* spacing for all paragraph text */
+p {
+    line-height: 1.5;
+}
+
+/* spacing for all bullet points */
+li {
+    line-height: 1.5;
+}
+
+/* wrap text around the photo */
+/* puts the intro text and photo next to each other in one row */
+.intro-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* controls the width of the text side so it doesn't stretch too far right */
+.intro-text {
+    flex: 1;
+    max-width: 850px;
+}
+
+/* photo dimensions of the "photo container"! */
+.intro-photo {
+    width: 200px;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+/* controls how the actual image looks inside the photo container */
+.intro-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+    display: block;
+}
+
+/* experience bullet list */
+.exp-list {
+    padding-left: 25px;
+    margin-top: 0;
+}
+
+/* space btwn each experience */
+.exp-list li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* make dates lighter color */
+.date {
+    color: #777;
+}
+
+/* email styling! */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* row of clickable social icons under photo */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* controls icon size */
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+/* subtle hover effect */
+.social-icons img:hover {
+    opacity: 0.6;
+}
+
+/* fix linkedin's off-centeredness by moving it up (interestingly a negative-y value) */
+.linkedin-icon {
+    transform: translateY(-2.5px);
+}
